@@ -1,3 +1,6 @@
+# Додавання каталогу inc до шляхів для заголовкових файлів
+ccflags-y := -I$(src)/inc
 
-# kbuild part of makefile
-obj-m := hello.o
+# Список модулів
+obj-m += hello1.o
+obj-m += hello2.o

@@ -1,4 +1,3 @@
-
 ifneq ($(KERNELRELEASE),)
 include Kbuild
 else
@@ -6,7 +5,7 @@ else
 KDIR ?= $$HOME/repos/linux-stable
 
 default:
-	$(MAKE) -C $(KDIR) M=$$PWD
+	$(MAKE) -C $(KDIR) M=$$PWD modules
 
 clean:
 	$(MAKE) -C $(KDIR) M=$$PWD clean
